@@ -1,157 +1,218 @@
-# Tarifs et forfaits (informations générales)
+# 07 – Tarifs et forfaits Fluid Tahiti (2025/2026 TTC)
 
-Ce document présente les grandes catégories de tarifs et de forfaits généralement proposés par un centre de plongée.  
-Les montants exacts et la devise sont à adapter par le centre.
-
----
-
-## 1. Principales catégories de prestations
-
-Les tarifs du centre peuvent être regroupés en plusieurs familles :
-
-1. **Baptêmes de plongée**
-2. **Plongées exploration (certifiés)**
-3. **Formations et certifications**
-4. **Snorkeling / randonnées palmées**
-5. **Location de matériel**
-6. **Prestations spécifiques** (sorties privatisées, photos, etc.)
+> Données basées sur la page “Tarifs 2025/2026 TTC” de Fluid Tahiti.  
+> Les montants sont indiqués en francs CFP et en euros. Résidents : tarifs spécifiques, sur demande directe auprès du centre.
 
 ---
 
-## 2. Baptêmes de plongée
+## 1. Plongée sous-marine – Public
 
--   **Baptême individuel**
+### 1.1 Plongées d’exploration (à la carte)
 
-    -   Comprend : briefing, encadrement, matériel, sortie en mer.
-    -   Tarif : à définir par le centre (ex. prix par personne).
+Résidents : nous contacter pour les tarifs spécifiques.
 
--   **Baptême en groupe / famille**
-    -   Tarif adapté en fonction du nombre de participants.
-    -   Conditions :
-        -   Nombre minimum ou maximum de personnes,
-        -   Possibles réductions pour les enfants ou les groupes.
-
----
-
-## 3. Plongées exploration pour plongeurs certifiés
-
-### 3.1. Plongée à l’unité
-
--   **1 plongée** :
-    -   Comprend : sortie bateau, guide, blocs et plombs (le reste du matériel peut être inclus ou en supplément).
-    -   Tarif : à définir par le centre.
-
-### 3.2. Forfaits multi-plongées
-
--   **Forfait 2 plongées (sur une journée ou deux demi-journées)**
-    -   Exemple : 2 plongées bateau avec guide.
--   **Forfait 4, 6, 10 plongées**
-    -   Tarifs dégressifs en fonction du nombre de plongées.
-    -   Conditions :
-        -   Validité du forfait (sur une période donnée),
-        -   Non remboursable une fois commencé, sauf cas particuliers (à préciser).
+| Prestation       | Prix CFP | Prix EUR |
+| ---------------- | -------: | -------: |
+| 1 plongée        |    8'500 |       72 |
+| 2 tanks          |   16'000 |      134 |
+| Pack 5 plongées  |   33'000 |      277 |
+| Pack 10 plongées |   56'000 |      469 |
+| Pack 20 plongées |   98'000 |      821 |
+| Plongée sunset   |    8'500 |       72 |
+| Plongée de nuit  |   10'500 |       88 |
 
 ---
 
-## 4. Formations et cours
+### 1.2 Plongées découverte
 
-### 4.1. Formation niveau débutant
-
--   Inclut généralement :
-    -   Cours théoriques,
-    -   Plongées en milieu protégé,
-    -   Plongées en milieu naturel,
-    -   Encadrement et suivi,
-    -   Matériel pendant la formation.
--   Le tarif comprend ou non :
-    -   Le **matériel pédagogique** (livre, supports numériques),
-    -   Les **frais de certification** (carte de plongée).
-
-### 4.2. Formations avancées et spécialités
-
--   Tarif par **formation complète** (par ex. niveau supérieur) ou par **spécialité**.
--   Variables selon :
-    -   Le nombre de plongées,
-    -   Les besoins théoriques,
-    -   Les éventuels frais de certification supplémentaires.
+| Prestation           | Prix CFP | Prix EUR |
+| -------------------- | -------: | -------: |
+| Baptême              |   12'000 |      100 |
+| Baptême + Niveau 1   |   45'750 |      384 |
+| Baptême + Open Water |   64'750 |      543 |
 
 ---
 
-## 5. Snorkeling / randonnées palmées
+### 1.3 Plongées de réadaptation
 
--   **Sortie snorkeling à l’unité** :
-    -   Comprend : sortie bateau, encadrement ou guide, matériel (masque, tuba, palmes, gilet).
--   **Forfaits snorkeling** :
-    -   Plusieurs sorties sur une période donnée.
-    -   Possibilité de tarifs famille ou groupe.
-
----
-
-## 6. Location de matériel
-
-Les tarifs de location peuvent être proposés :
-
--   **À la pièce** :
-    -   Combinaison,
-    -   Détendeur,
-    -   Gilet stabilisateur,
-    -   Ordinateur de plongée,
-    -   Lampe, etc.
--   **En pack complet** :
-    -   Ensemble du matériel pour une ou plusieurs plongées.
--   Tarifs :
-    -   Par **plongée**,
-    -   Par **demi-journée** ou **journée**.
+| Prestation                                 | Prix CFP | Prix EUR |
+| ------------------------------------------ | -------: | -------: |
+| Réadaptation si dernière plongée > 18 mois |   15'000 |      126 |
+| Réadaptation si dernière plongée < 18 mois |   10'000 |       84 |
 
 ---
 
-## 7. Prestations spécifiques
+## 2. Plongées de formation
 
-### 7.1. Sorties privatisées
+### 2.1 Formations SSI (Scuba School International)
 
--   Mise à disposition du bateau et de l’équipe pour un groupe privé.
--   Tarif souvent :
-    -   À la demi-journée ou à la journée,
-    -   En fonction du nombre de personnes et des prestations incluses.
+#### 2.1.1 Cursus principal SSI
 
-### 7.2. Photos et vidéos
-
--   Option d’achat de photos ou vidéos de la plongée.
--   Tarifs possibles :
-    -   Par personne,
-    -   Par groupe ou par support (clé USB, lien de téléchargement).
-
----
-
-## 8. Réductions et conditions particulières
-
--   **Réductions possibles** (à adapter) :
-    -   Pour les **groupes** (clubs, familles nombreuses),
-    -   Pour les **plongeurs effectuant plusieurs jours de suite**,
-    -   Pour les **résidents locaux**, si le centre le propose.
--   **Conditions** :
-    -   Non cumulables entre elles (sauf mention contraire),
-    -   Applicables uniquement sur présentation d’un justificatif si nécessaire.
+| Formation                             | Prix CFP | Prix EUR |
+| ------------------------------------- | -------: | -------: |
+| Try Scuba (baptême SSI)               |   10'500 |       88 |
+| Basic Diver                           |   22'000 |      184 |
+| Scuba Diver                           |   36'900 |      309 |
+| Upgrade Scuba Diver → Open Water      |   30'000 |      251 |
+| Open Water Diver                      |   60'000 |      503 |
+| Passage Niveau 1 → Open Water         |   30'000 |      252 |
+| Pack Advanced Adventurer (5 plongées) |   50'000 |      587 |
+| Pack Advanced Open Water              |   70'000 |      587 |
+| Pack Emergency Training               |   64'000 |      537 |
+| Pack Dive Master                      |  125'000 |    1'047 |
+| Air Nitrox + 2 plongées               |   23'000 |      193 |
 
 ---
 
-## 9. Modalités de paiement
+#### 2.1.2 Spécialités SSI
 
--   Moyens de paiement acceptés (à préciser par le centre) :
-    -   Espèces,
-    -   Carte bancaire,
-    -   Virement,
-    -   Autres (chèques, bons cadeaux, etc.).
--   Acompte :
-    -   Possibilité de demander un acompte à la réservation (montant ou pourcentage à définir).
--   Soldes :
-    -   Règlement du solde avant ou après la sortie, selon la politique du centre.
+| Spécialité / Pack                                                   | Prix CFP | Prix EUR |
+| ------------------------------------------------------------------- | -------: | -------: |
+| 2 spécialités en 4 plongées (Nitrox + Profonde)                     |   52'000 |      436 |
+| 2 spécialités en 4 plongées – Navigation / Flottabilité / Photo\*   |   44'000 |      369 |
+| Air Nitrox (E-learning seul)                                        |   13'000 |      109 |
+| Deep Diving (spécialité plongée profonde)                           |   36'000 |      301 |
+| 1 spécialité en 2 plongées (Navigation / Night / Nitrox / Buoyancy) |   24'000 |      201 |
+| Stress & Rescue                                                     |   55'000 |      461 |
+| React Right                                                         |   15'000 |      126 |
+
+\* Hors spécialités Deep & Rescue.
 
 ---
 
-## 10. Informations importantes
+### 2.2 Formations CMAS – Niveaux français
 
--   Les tarifs sont généralement :
-    -   **Affichés TTC** (toutes taxes comprises),
-    -   Susceptibles d’évoluer (période, saison, coûts d’exploitation).
--   Les montants et conditions exacts sont communiqués par le centre au moment de la réservation ou consultables sur ses supports officiels.
+| Formation / Niveau                                             |       Prix CFP | Prix EUR |
+| -------------------------------------------------------------- | -------------: | -------: |
+| Niveau 1                                                       |         41'000 |      343 |
+| Niveau 2                                                       |         79'000 |      662 |
+| PE40 (Plongeur Encadré 40 m)                                   |         41'000 |      344 |
+| PA20 (Plongeur Autonome 20 m)                                  |         60'000 |      502 |
+| Niveau 3                                                       |         76'000 |      636 |
+| Niveau 4                                                       |        125'000 |    1'047 |
+| RIFAP (Réaction et Intervention face à un accident de plongée) |         15'000 |      126 |
+| Licence fédérale (complément à certaines formations)           |          5'800 |       49 |
+| Monitorat                                                      | Nous contacter |        – |
+
+---
+
+### 2.3 CMAS – Formation Tech
+
+| Formation          | Prix CFP | Prix EUR | Remarques                    |
+| ------------------ | -------: | -------: | ---------------------------- |
+| Nitrox élémentaire |   13'000 |      109 | Support théorique uniquement |
+
+---
+
+## 3. Tahiti Snorkeling & Excursion Baleine
+
+### 3.1 Snorkeling Tahiti
+
+Résidents : nous contacter pour les tarifs spécifiques.
+
+| Prestation                | Prix CFP | Prix EUR | Conditions          |
+| ------------------------- | -------: | -------: | ------------------- |
+| Snorkeling trip adventure |   13'000 |      109 | 4 personnes minimum |
+
+---
+
+### 3.2 Excursion baleine
+
+| Prestation                            | Prix CFP | Prix EUR | Conditions          |
+| ------------------------------------- | -------: | -------: | ------------------- |
+| Adulte – sortie avec mise à l’eau     |   17'000 |      143 | 4 personnes minimum |
+| Adulte – observation depuis le bateau |   13'000 |      109 | 4 personnes minimum |
+
+Résidents : nous contacter pour les tarifs.
+
+---
+
+### 3.3 Full Day Dive Adventure
+
+| Prestation                                              | Prix CFP | Prix EUR | Conditions                |
+| ------------------------------------------------------- | -------: | -------: | ------------------------- |
+| Journée complète “Full day Dive adventure” (3 plongées) |   30'000 |      251 | 3 personnes min., 12 max. |
+
+---
+
+## 4. Tahiti Sunset & Restaurant (sorties “public”)
+
+Tarifs par personne – 2 personnes minimum.
+
+### 4.1 Croisière Sunset
+
+| Prestation       | Prix CFP | Prix EUR | Horaires      |
+| ---------------- | -------: | -------: | ------------- |
+| Croisière Sunset |   10'000 |       83 | 16h30 → 18h00 |
+
+---
+
+### 4.2 Dîner & Taxi
+
+| Prestation   | Prix CFP | Prix EUR | Horaires      |
+| ------------ | -------: | -------: | ------------- |
+| Dîner & Taxi |    6'500 |       55 | 18h00 → 20h30 |
+
+**Détails :**
+
+-   Dîner au restaurant La Casa Bianca
+-   Menu 2 services inclus (plat + dessert)
+-   Prise en charge des bagages
+-   Retour en taxi inclus (hôtel ou aéroport)
+
+---
+
+## 5. Permis côtier
+
+Tarifs par personne.
+
+| Prestation      | Prix CFP | Prix EUR |
+| --------------- | -------: | -------: |
+| Permis côtier   |   27'000 |      226 |
+| Timbres fiscaux |    8'000 |       67 |
+
+---
+
+## 6. Bateau privé
+
+> Les montants ci-dessous s’appliquent pour des sorties privatisées.  
+> Les prix sont valables jusqu’à 6 personnes (jusqu’à 5 personnes pour l’excursion “Tahiti Shark Dive Adventure 1 jour”).  
+> Au-delà, le tarif “public” par personne est appliqué pour chaque participant supplémentaire.
+
+### 6.1 Tahiti adventures – Snorkeling privé
+
+#### 6.1.1 Tahiti Snorkeling Adventure (bateau privatisé)
+
+| Prestation                         | Prix CFP | Prix EUR | Conditions          |
+| ---------------------------------- | -------: | -------: | ------------------- |
+| Tahiti Snorkeling Adventure – 2h   |   80'000 |      670 | 2 personnes minimum |
+| Tahiti Snorkeling Adventure – 3h30 |  138'000 |    1'157 | 4 personnes minimum |
+
+---
+
+### 6.2 Tahiti Sunset & Restaurant – Privatisation
+
+#### 6.2.1 Croisière Sunset, Dîner & Taxi (privé)
+
+| Prestation                                     | Prix CFP | Prix EUR | Conditions          |
+| ---------------------------------------------- | -------: | -------: | ------------------- |
+| Croisière Sunset, Dîner & Taxi (16h30 → 20h30) |   80'000 |      670 | 2 personnes minimum |
+
+**Détails inclus :**
+
+-   Dîner au restaurant La Casa Bianca
+-   Menu 2 services (plat + dessert)
+-   Bagages pris en charge
+-   Retour taxi vers hôtel ou aéroport inclus
+
+---
+
+## 7. Remarques générales
+
+-   **Période de validité** : tarifs 2025/2026 TTC, tels qu’affichés sur le site officiel de Fluid Tahiti au 30/11/2025.
+-   **Résidents** : pour plusieurs activités (exploration, snorkeling, baleines), les tarifs résidents sont indiqués “nous contacter”.
+-   **Capacité minimale / maximale** :
+    -   Certaines activités nécessitent un nombre minimum de participants (souvent 2, 3 ou 4 personnes).
+    -   Pour certaines journées complètes, un maximum de 12 personnes est précisé.
+-   **Monnaies** : les prix sont donnés en francs CFP et en euros à titre indicatif, conformément au site.
+-   **Évolutions possibles** : les tarifs peuvent être ajustés par le centre ; toujours vérifier les prix actuels directement auprès de Fluid Tahiti au moment de la réservation.
