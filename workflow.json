@@ -1,0 +1,168 @@
+{
+	"name": "Markdown → Qdrant (chunk + upsert)",
+	"nodes": [
+		{
+			"parameters": {
+				"httpMethod": "POST",
+				"path": "md-ingest",
+				"responseMode": "onReceived",
+				"options": {
+					"responseCode": 202,
+					"responseData": "={{ { \"status\": \"accepted\", \"doc_id\": $json.doc_id ?? $json.file_name ?? \"unknown\" } }}",
+					"responseHeaders": {
+						"Content-Type": "application/json"
+					}
+				}
+			},
+			"id": "Webhook_Ingest",
+			"name": "Webhook - Ingest Markdown",
+			"type": "n8n-nodes-base.webhook",
+			"typeVersion": 1,
+			"position": [-800, 200]
+		},
+		{
+			"parameters": {
+				"functionCode": "const item = items[0];\nconst body = item.json || {};\n\nconst docId = body.doc_id || body.file_name || 'unknown_doc';\nconst fileName = body.file_name || (docId + '.md');\nconst markdown = body.markdown || '';\nconst metadata = body.metadata || {};\n\nif (!markdown || typeof markdown !== 'string' || !markdown.trim()) {\n  throw new Error('Champ \"markdown\" manquant ou vide.');\n}\n\nmetadata.langue = metadata.langue || $env.DEFAULT_LANG || 'fr';\nmetadata.audience = metadata.audience || $env.DEFAULT_AUDIENCE || 'public';\n\nreturn [\n  {\n    json: {\n      doc_id: docId,\n      file_name: fileName,\n      markdown,\n      metadata\n    }\n  }\n];"
+			},
+			"id": "Function_Normalize",
+			"name": "Function - Normalize Input",
+			"type": "n8n-nodes-base.function",
+			"typeVersion": 2,
+			"position": [-520, 200]
+		},
+		{
+			"parameters": {
+				"method": "POST",
+				"url": "={{$env.QDRANT_URL}}/collections/{{$env.QDRANT_COLLECTION}}/points/delete?wait=true",
+				"jsonParameters": true,
+				"options": {},
+				"bodyParametersJson": "={{ { \"filter\": { \"must\": [ { \"key\": \"doc_id\", \"match\": { \"value\": $json.doc_id } } ] } } }}"
+			},
+			"id": "HTTP_Qdrant_Delete",
+			"name": "HTTP - Qdrant Delete by doc_id",
+			"type": "n8n-nodes-base.httpRequest",
+			"typeVersion": 3,
+			"position": [-260, 200]
+		},
+		{
+			"parameters": {
+				"functionCode": "const item = items[0];\nconst { doc_id, file_name, markdown, metadata } = item.json;\n\nconst paragraphs = markdown.split(/\\n\\s*\\n/);\nconst maxLen = 1000;\n\nlet chunks = [];\nlet current = '';\nlet index = 0;\n\nfor (let p of paragraphs) {\n  const trimmed = p.trim();\n  if (!trimmed) continue;\n\n  if ((current + '\\n\\n' + trimmed).length > maxLen && current) {\n    chunks.push(current.trim());\n    current = trimmed;\n  } else {\n    current += (current ? '\\n\\n' : '') + trimmed;\n  }\n}\n\nif (current.trim()) {\n  chunks.push(current.trim());\n}\n\nreturn chunks.map((text, i) => ({\n  json: {\n    doc_id,\n    source_file: file_name,\n    chunk_index: i,\n    text,\n    metadata\n  }\n}));"
+			},
+			"id": "Function_Chunk",
+			"name": "Function - Chunk Markdown",
+			"type": "n8n-nodes-base.function",
+			"typeVersion": 2,
+			"position": [0, 200]
+		},
+		{
+			"parameters": {
+				"method": "POST",
+				"url": "https://api.openai.com/v1/embeddings",
+				"jsonParameters": true,
+				"options": {},
+				"bodyParametersJson": "={{ { \"model\": $env.OPENAI_EMBEDDING_MODEL || 'text-embedding-3-small', \"input\": $json.text } }}",
+				"headerParametersJson": "={{ { \"Content-Type\": \"application/json\", \"Authorization\": \"Bearer \" + $env.OPENAI_API_KEY } }}"
+			},
+			"id": "HTTP_OpenAI_Embedding",
+			"name": "HTTP - OpenAI Embedding",
+			"type": "n8n-nodes-base.httpRequest",
+			"typeVersion": 3,
+			"position": [260, 200]
+		},
+		{
+			"parameters": {
+				"functionCode": "const chunkNodeName = 'Function - Chunk Markdown';\nconst embedItems = items; // résultats OpenAI pour chaque chunk\nconst chunkItems = $items(chunkNodeName, 0, embedItems.length);\n\nif (chunkItems.length !== embedItems.length) {\n  throw new Error('Nombre d\\'items différent entre chunks et embeddings.');\n}\n\nconst out = [];\n\nfor (let i = 0; i < chunkItems.length; i++) {\n  const chunk = chunkItems[i].json;\n  const embed = embedItems[i].json;\n\n  if (!embed || !embed.data || !embed.data[0] || !embed.data[0].embedding) {\n    throw new Error('Réponse embedding invalide pour le chunk ' + i);\n  }\n\n  const vector = embed.data[0].embedding;\n\n  out.push({\n    json: {\n      doc_id: chunk.doc_id,\n      source_file: chunk.source_file,\n      chunk_index: chunk.chunk_index,\n      text: chunk.text,\n      metadata: chunk.metadata,\n      vector\n    }\n  });\n}\n\nreturn out;"
+			},
+			"id": "Function_BuildPoint",
+			"name": "Function - Build Qdrant Point",
+			"type": "n8n-nodes-base.function",
+			"typeVersion": 2,
+			"position": [520, 200]
+		},
+		{
+			"parameters": {
+				"method": "POST",
+				"url": "={{$env.QDRANT_URL}}/collections/{{$env.QDRANT_COLLECTION}}/points/upsert?wait=true",
+				"jsonParameters": true,
+				"options": {},
+				"bodyParametersJson": "={{ { \"points\": [ { \"id\": $json.doc_id + '-' + $json.chunk_index, \"vector\": $json.vector, \"payload\": { \"doc_id\": $json.doc_id, \"source_file\": $json.source_file, \"chunk_index\": $json.chunk_index, \"text\": $json.text, \"metadata\": $json.metadata } } ] } }}",
+				"headerParametersJson": "={{ { \"Content-Type\": \"application/json\", \"api-key\": $env.QDRANT_API_KEY || undefined } }}"
+			},
+			"id": "HTTP_Qdrant_Upsert",
+			"name": "HTTP - Qdrant Upsert Point",
+			"type": "n8n-nodes-base.httpRequest",
+			"typeVersion": 3,
+			"position": [780, 200]
+		}
+	],
+	"connections": {
+		"Webhook - Ingest Markdown": {
+			"main": [
+				[
+					{
+						"node": "Function - Normalize Input",
+						"type": "main",
+						"index": 0
+					}
+				]
+			]
+		},
+		"Function - Normalize Input": {
+			"main": [
+				[
+					{
+						"node": "HTTP - Qdrant Delete by doc_id",
+						"type": "main",
+						"index": 0
+					}
+				]
+			]
+		},
+		"HTTP - Qdrant Delete by doc_id": {
+			"main": [
+				[
+					{
+						"node": "Function - Chunk Markdown",
+						"type": "main",
+						"index": 0
+					}
+				]
+			]
+		},
+		"Function - Chunk Markdown": {
+			"main": [
+				[
+					{
+						"node": "HTTP - OpenAI Embedding",
+						"type": "main",
+						"index": 0
+					}
+				]
+			]
+		},
+		"HTTP - OpenAI Embedding": {
+			"main": [
+				[
+					{
+						"node": "Function - Build Qdrant Point",
+						"type": "main",
+						"index": 0
+					}
+				]
+			]
+		},
+		"Function - Build Qdrant Point": {
+			"main": [
+				[
+					{
+						"node": "HTTP - Qdrant Upsert Point",
+						"type": "main",
+						"index": 0
+					}
+				]
+			]
+		}
+	},
+	"settings": {},
+	"tags": []
+}
