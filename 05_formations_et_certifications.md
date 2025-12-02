@@ -38,6 +38,7 @@ _(Nom réel du brevet à adapter selon l’organisme utilisé par le centre : Op
     -   Principes de base de la plongée (pression, flottabilité, équipement).
     -   Notions de sécurité, prévention des accidents.
 -   **Partie pratique en milieu protégé** :
+    -   Chez Fluid Tahiti, il n'y a pas d'exercice en piscine.
     -   Exercices en eau peu profonde.
     -   Découverte du matériel et des gestes de base.
 -   **Plongées en milieu naturel** :
